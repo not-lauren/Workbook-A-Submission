@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>About the Farm</title> 
+    <style>
+        body{               
+            cursor: url('images/farmer.png'), auto;
+            font-family: monospace;
+            color:hotpink;
+            background-image: url('images/background.png');
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+            text-align: center;
+        } 
+
+h1 {
+  color: hotpink;
+}
+
+/* code snippets for the container were taken from the Interactive Media Week 1 and 2 modules, cheatsheets, and The Interactive Media Gallery Builder (https://karenanndonnachie.github.io/VCA_INTERACTIVEMEDIA/CHEATSHEETS/gallery_builder.html)
+*/ 
+
+#container {
+height: max-content;
+width: 90vw;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+border: 7px dashed rgb(103, 60, 2); ;
+border-bottom: none;
+background-image: url("images/paddock3.jpg");
+}
+
+.child {
+flex: 1;
+  width: 100%;
+  border-bottom: 7px dashed rgb(103, 60, 2);
+  text-align: center;
+  color: chartreuse;
+}
+
+.container {
+    width: 100%;
+    height: auto; 
+    position: center;
+    overflow: visible;
+}
+
+.flying-png {
+    position: absolute;
+    width: 50px; 
+    height: auto;
+    animation: fly 25s linear infinite; 
+}
+
+
+@keyframes fly {
+    0% {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0) rotate(0deg);
+    }
+ 20% {
+        top: 20%;
+        left: 97%;
+        transform: translate(0, -50%) rotate(90deg);
+    }
+    40% {
+        top: 40%;
+        left: 0%;
+        transform: translate(0, -100%) rotate(180deg);
+    }
+    65% {
+        top: 100%;
+        left: 97%;
+        transform: translate(0, -50%) rotate(270deg);
+    }
+    80% {
+        top: 150%;
+        left: 0%;
+        transform: translate(0, 0) rotate(360deg);
+    }
+    100% {
+        top: 190%;
+        left: 110%;
+        transform: translate(0, 0) rotate(360deg);
+    }
+    
+}
+
+footer{
+    text-align: center;
+
+}
+    </style>
+    </head>
+    <body>
+        <h1> About the Farm</h1>
+ <br>
+    <img src="images/grass.png" alt="grass" title="grass" width="400"/>
+    <img src="images/carrot.png" alt="carrot" title="carrot" width="200"/>
+    <img src="images/farmer.png" alt="farmer" title="farmer" width="200"/>
+    <img src="images/carrot.png" alt="carrot" title="carrot" width="200"/>
+    <img src="images/grass.png" alt="grass" title="grass" width="400"/>
+
+ <section id="container">
+    <div class="child">
+    <h1> What is this place?</h1>
+     <h2>The Farm is an interactive workbook that documents the in-class activities, projects, and research for the VCA's Interactive Media class in Semester 1, 2026. It was created using CSS and HTML code. </h2>
+    <img src="images/horse.png" alt="horse" title="horse" width="300"/>
+    </div>
+
+    <div class="child">
+    <h1> Who is this farmer guy?</h1>
+    <h2> That's Farmer Gareth. I like to think of him as my digital avatar - he's just another version of me (Lauren). He likes jazz, espresso tonics, and tending to his herb garden.</h2>
+    <img src="images/farmer.png" alt="farmer" title="farmer" width="300"/>
+    </div>
+
+    <div class="child">
+    <h1> Why a farm?</h1>
+    <h2> Why not?</h2>
+    <img src="images/carrot.png" alt="carrot" title="carrot" width="200"/>
+    </div>
+
+</section>
+
+<div class="container">
+<img src="images/farmer.png" alt="Flying farmer" class="flying-png">
+</div>
+<h1> Return to Farm</h1>
+    <a href="index.html"> <img src="images/farmer.png" width="100"></a>
+</body>
+
+    <footer> ® Lauren Luchs Interactive Media </footer>
+    </html> 
