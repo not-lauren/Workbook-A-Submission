@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>The Workbook Farm</title> 
+    <style>
+        body{               
+            cursor: url('images/net.png'), auto;
+            font-family: monospace;
+            color:hotpink;
+            background-image: url('images/background.png');
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+            text-align: center;
+        } 
+
+
+/* code snippets for the container were taken from the Interactive Media Week 1 and 2 modules, cheatsheets, and The Interactive Media Gallery Builder (https://karenanndonnachie.github.io/VCA_INTERACTIVEMEDIA/CHEATSHEETS/gallery_builder.html)
+*/ 
+#container {
+height: 90vh;
+width: 90vw;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+border: 7px dashed rgb(103, 60, 2); ;
+border-bottom: none;
+background-image: url("images/paddock3.jpg");
+}
+
+.child {
+flex: 1;
+  width: 100%;
+  border-bottom: 7px dashed rgb(103, 60, 2);
+  text-align: center;
+  color: chartreuse;
+}
+
+.container {
+    width: 100%;
+    height: auto; 
+    position: center;
+    overflow: visible;
+}
+
+.flying-png {
+    position: absolute;
+    width: 50px; 
+    height: auto;
+    animation: fly 25s linear infinite; 
+}
+/* code for flying PNG was created through using code snippets (later altered) from the following sites: 
+https://cargo2support.cargo.site/Make-an-Image-Fly-Across-the-Screen
+https://wicky.co/make-an-image-fly-across-the-screen/#:~:text=Part%201%20CSS%20Code:,ShowHideDiv(this)%22%20/%3E
+*/
+
+@keyframes fly {
+    0% {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0) rotate(0deg);
+    }
+ 20% {
+        top: 20%;
+        left: 97%;
+        transform: translate(0, -50%) rotate(90deg);
+    }
+    40% {
+        top: 40%;
+        left: 0%;
+        transform: translate(0, -100%) rotate(180deg);
+    }
+    65% {
+        top: 100%;
+        left: 97%;
+        transform: translate(0, -50%) rotate(270deg);
+    }
+    80% {
+        top: 150%;
+        left: 0%;
+        transform: translate(0, 0) rotate(360deg);
+    }
+    100% {
+        top: 190%;
+        left: 110%;
+        transform: translate(0, 0) rotate(360deg);
+    }
+    
+}
+
+footer{
+    text-align: center;
+
+}
+    </style>
+    </head>
+    <body>
+        <h1> WELCOME TO THE FARM</h1>
+        <h2> Come see what I've been looking after for the past 4 weeks.</h2>
+        <h2> Click on the farmer and his farm animals below to learn more about the process of building this Workbook.</h2>
+    <br>
+    <img src="images/grass.png" alt="grass" title="grass" width="400"/>
+    <img src="images/carrot.png" alt="carrot" title="carrot" width="200"/>
+    <a href="about.html"> <img src="images/farmer.png" alt="about the farm" width="200"></a>
+    <img src="images/carrot.png" alt="carrot" title="carrot" width="200"/>
+    <img src="images/grass.png" alt="grass" title="grass" width="400"/>
+
+ <section id="container">
+
+    <div class="child">
+    <h1> Paddock 1 - Milton</h1>
+    <a href="Horse_page1.html"> <img src="images/horse.png" width="200"> </a>
+    </div>
+
+    <div class="child"> 
+    <h1> Paddock 2 - Bessie</h1> 
+     <a href="Cow_page1.html"> <img src="images/cow2.png" width="200"> </a>
+    </div>
+
+    <div class="child">
+    <h1> Paddock 3 - Big Cluck</h1>
+    <a href="ResearchRooster.html"> <img src="images/rooster.png" width="100"></a>
+    </div> 
+
+</section>
+<br>
+<img src="images/grass.png" alt="grass" title="grass" width="400"/>
+<img src="images/grass.png" alt="grass" title="grass" width="400"/>
+<img src="images/grass.png" alt="grass" title="grass" width="400"/>
+
+<div class="container">
+<img src="images/cow.png" alt="Flying cow" class="flying-png">
+</div>
+
+
+    </body>
+    <footer> ® Lauren Luchs Interactive Media </footer>
+    </html> 
